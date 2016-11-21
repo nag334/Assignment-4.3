@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assignment 4.3</title>
+    </head>
+    <!-- Css style for Image  -->
+    <style>
+        /* Box container with width and height */
+        .Image{
+            
+          border-radius: 0%;
+            width: 150px;
+            height: 150px;
+            background-color: green;
+           
+        }
+        /* animations for box to circle  */
+        @-webkit-keyframes circle{
+            
+            0%{ background-color:green; border-radius: 0% }
+            50%{ background-color:orange; border-radius: 15% }
+            75%{ background-color:orange; border-radius: 30% }
+            100%{ background-color:orange; border-radius: 50% }
+        
+        }
+        /* paragraph with padding */
+        p{
+            text-align: center;
+            padding: 60px;
+        }
+        
+        .Image:hover{
+            
+            
+            -webkit-animation-name: circle;
+            -webkit-animation-duration: 4s;
+        }
+    </style>
+    <body>
+        <!-- Div with class name image  -->
+      <center>
+            <div class="Image">
+               <p>Box</p>
+          
+          </div>
+        
+        </center>
+    </body>
+</html>
